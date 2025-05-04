@@ -11,9 +11,11 @@ while (true) {
   contador++;
 }
 if (contador > 0) {
-  console.log('X=======================================X');
-  console.log('Soma dos números:', (totalNumeros + 0).toFixed(2));
+  console.log('\nX=======================================X');
+  console.log('Quantidade de números digitados:', contador);
+  console.log('Soma dos números:', totalNumeros.toFixed(2));
   console.log('Média:', (totalNumeros / contador).toFixed(2));
+  console.log('X=======================================X\n');
 } else {
   console.log('Nenhuma número válido foi digitado!');
 }
