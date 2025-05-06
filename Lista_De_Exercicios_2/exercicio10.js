@@ -5,7 +5,7 @@
 // c) A média entre todos os valores;
 // d) Quantos valores são pares.
 
-const prompt = require('prompt-sync')()
+const prompt = require('prompt-sync')();
 
 let soma = 0,
   menor = null,
@@ -14,18 +14,20 @@ let soma = 0,
 let continuar;
 
 do {
-  let num = parseInt(prompt('Digite um número:'));
+  let num = parseInt(prompt('Digite um número: '));
   soma += num;
   if (menor === null || num < menor) menor = num;
   if (num % 2 === 0) pares++;
   count++;
 
-  continuar = prompt('Deseja continuar? (S/N)').toUpperCase();
+  continuar = prompt('Deseja continuar? (S/N) ').toUpperCase();
 } while (continuar === 'S');
 
 let media = soma / count;
 
+console.log('==============================================');
 console.log(`Soma total: ${soma}`);
 console.log(`Menor valor: ${menor}`);
 console.log(`Média: ${media.toFixed(2)}`);
 console.log(`Quantidade de números pares: ${pares}`);
+console.log('==============================================');
