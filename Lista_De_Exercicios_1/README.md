@@ -1,7 +1,7 @@
 # Curso +praTi - Lista de exercícios 1
 
-- *Esta pasta contém todos os exercícios passados na Lista de Exercícios fornecida pelo Instrutor;*
-- *Esta lista contém exercícios referentes a:*
+- **Esta pasta contém todos os exercícios passados na Lista de Exercícios fornecida pelo Instrutor;**
+- **Esta lista contém exercícios referentes a:**
     - *Estruturas de controle condicional;*
     - *Estrutura condicional;*
     - *Estrutura de decisão;*
@@ -12,7 +12,7 @@
 
 ## Requisitos:
 
-- Node.js instalado em sua máquina.
+- **Node.js** *instalado em sua máquina.*
 
 ## Instalação:
 
