@@ -40,7 +40,7 @@ node Lista_De_Exercicios_2/exercicio1.js
 
 ### 🧠 Descrição dos Exercícios
 
-###### Exercício  |  Descrição
+##### Exercício  |  Descrição
 
 `exercicio1.js`  |  *Verifica se uma data é `true` ou `false`.*
 
