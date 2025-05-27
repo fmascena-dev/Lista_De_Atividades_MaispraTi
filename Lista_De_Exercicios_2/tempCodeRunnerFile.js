@@ -29,7 +29,7 @@ if (escolha === '1') {
     }
   
     const resultado = paresParaObjeto(pares);
-    console.log('Objeto resultante:', resultado);
+    console.log('Objeto resultante:', resultado); // ou JSON.stringify(resultado)
   } else if (escolha === '2') {
   const objeto = {};
   const n = parseInt(prompt('Quantas propriedades deseja inserir? '));
@@ -37,7 +37,7 @@ if (escolha === '1') {
   for (let i = 0; i < n; i++) {
     const chave = prompt(`Chave ${i + 1}: `);
     const valor = prompt(`Valor ${i + 1}: `);
-    objeto[chave] = valor;
+    obj[chave] = valor;
   }
 
   console.log('Array de pares:', objetoParaPares(objeto));
