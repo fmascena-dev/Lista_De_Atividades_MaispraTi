@@ -40,16 +40,24 @@ node Lista_De_Exercicios_2/exercicio1.js
 
 ### 🧠 Descrição dos Exercícios
 
-Exercício  |  Descrição
+###### Exercício  |  Descrição
 
 `exercicio1.js`  |  *Verifica se uma data é `true` ou `false`.*
+
 `exercicio2.js`  |  *Verifica se o usuário acertou o número gerado aleatoriamente.*
+
 `exercicio3.js`  |  *Verifica as palavras únicas na frase digitada pelo usuário e exibe em um array.*
+
 `exercicio4.js`  |  *Exibe o fatorial de um número digitado pelo usuário.*
+
 `exercicio5.js`  |  *Pratica o uso do `debounce` para limitar a frequência com que uma função é executada.*
+
 `exercicio6.js`  |  *Pratica o uso do conceito `memoize` que é uma técnica de otimização que armazena os resultados para que chamadas futuras com os mesmo argumentos sejam atendidas diretamente do cache.*
+
 `exercicio7.js`  |  *Recebe uma lista de produtos com `nome` e `preço` do usuário e retorna um novo array apenas com os nomes, ordenados pelo preço crescente.*
+
 `exercicio8.js`  |  *Agrupa e soma os valores por cliente em uma lista de vendas.*
+
 `exercicio9.js`  |  *Permite converter entre pares de chave/valor e objetos usando as funções `Object.entries()` e `Object.fromEntries()`.*
 
 ### 🛠 Tecnologias Utilizadas
