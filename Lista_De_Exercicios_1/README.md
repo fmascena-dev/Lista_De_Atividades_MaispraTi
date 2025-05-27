@@ -14,6 +14,12 @@
 
 - **Node.js** *instalado em sua máquina.*
 
+### 🛠 Instalação Adicional
+
+- Para a visualização do PDF, instale a seguinte extensão no seu VsCode:
+
+<img src='./image.png' />
+
 ## Instalação:
 
 - **Clone este repositório:**
