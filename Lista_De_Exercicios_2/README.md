@@ -65,3 +65,9 @@ node Lista_De_Exercicios_2/exercicio1.js
 - **JavaScript (ES6+)**
 - **Node.js**
 - **prompt-sync (entrada de dados no terminal)**
+
+#### 🛠 Instalação Adicional
+
+- Para a visualização do PDF, instale a seguinte extensão no seu VsCode:
+
+<img src='./image.png' />
