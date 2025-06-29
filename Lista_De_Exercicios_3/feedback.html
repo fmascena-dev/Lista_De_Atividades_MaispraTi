@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="feedback.css" />
+    <title>Formulário de Feedback</title>
+  </head>
+  <body>
+    <header class="feedback-header">
+      <h1>Formulário de Feedback</h1>
+    </header>
+
+    <main class="feedback-main">
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="endereco">Endereço Completo:</label>
+        <input type="text" id="endereco" name="endereco" />
+
+        <label for="tipo">Tipo de Feedback:</label>
+        <select id="tipo" name="tipo">
+          <option>Sugestão</option>
+          <option>Reclamação</option>
+          <option>Elogio</option>
+        </select>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+
+        <div class="feedback-button">
+            <button type="submit">ENVIAR</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="feedback-footer">
+      <p>&copy; 2025 - Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>

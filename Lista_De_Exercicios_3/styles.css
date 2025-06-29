@@ -1,0 +1,164 @@
+/* Estrutura Principal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #00ff37;
+  border-radius: 8px;
+  font-family: "JetBrains Mono";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  background-color: #f4f4f4;
+  color: #222121;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+}
+
+.nav-principal ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-principal li a {
+  text-decoration: none;
+  color: #e1e1e1;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  &:hover {
+    text-decoration: underline;
+    color: #ff0000;
+  }
+}
+
+#missao p {
+    color: #000;
+    font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.destaque {
+  font-style: italic;
+  background-color: rgb(98, 98, 99);
+  border-radius: 6px;
+  padding: 0.2rem 1rem;
+}
+
+#importante {
+  border-top: 4px solid #c00;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.galeria-grid figure {
+  text-align: center;
+  padding: 16px;
+}
+
+.galeria-grid figure img {
+  width: 40%;
+}
+
+.galeria-grid figure figcaption {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+/* Responsividade da Galeria */
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Menu Hamburger */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #444;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.mobile-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+
+  &:hover {
+    text-decoration: underline;
+    color: #ff0000;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-principal {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}

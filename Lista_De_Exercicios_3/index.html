@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lista de Exercícios 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu Hamburger -->
+    <header>
+      <h1>Bem-vindo ao Meu Site</h1>
+      <p class="destaque">Este é um projeto de prática com HTML e CSS.</p>
+
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="#missao">Missão</a></li>
+          <li><a href="#visao">Visão</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="listas.html" target="_blank">Listas</a></li>
+          <li><a href="feedback.html" target="_blank">Feedback</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <nav class="mobile-menu" id="mobile-menu">
+        <a href="#missao">Missão</a>
+        <a href="#visao">Visão</a>
+        <a href="#galeria">Galeria</a>
+        <a href="listas.html" target="_blank">Listas</a>
+        <a href="feedback.html" target="_blank">Feedback</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="missao">
+        <h2>Missão</h2>
+        <p>
+          Nossa missão é promover o conhecimento e o desenvolvimento de
+          habilidades em tecnologia.
+        </p>
+      </section>
+
+      <section id="visao">
+        <h2>Visão</h2>
+        <p id="importante">
+          Ser referência em educação acessível e de qualidade na área de
+          desenvolvimento web.
+        </p>
+      </section>
+
+      <!--! EXERCÍCIO 6 - TREINO COM GRID -->
+      <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="galeria-container">
+          <div class="galeria-grid">
+            <figure>
+              <img
+                src="https://media.licdn.com/dms/image/v2/C4D0BAQHl9j4F1HWEXQ/company-logo_200_200/company-logo_200_200/0/1630576501507/maisprati_logo?e=1756339200&v=beta&t=ImGjSbwL34jEZdHj6qXUMdOMEeposrZZz_W8YmRXmJ8"
+                alt="Imagem da logo da +praTi"
+              />
+              <figcaption>+praTi</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://bognarjunior.wordpress.com/wp-content/uploads/2014/12/1417589451_html-256.png"
+                alt="imagem da logo do HTML"
+              />
+              <figcaption>HTML 5</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226088.png?f=webp&w=256"
+                alt="imagemd a logo do CSS"
+              />
+              <figcaption>CSS 3</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://bognarjunior.wordpress.com/wp-content/uploads/2018/01/1crcyaithv7aiqh1z93v99q.png"
+                alt="Imagem da logo do Javascript"
+              />
+              <figcaption>Javascript</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://bognarjunior.wordpress.com/wp-content/uploads/2018/03/if_react-js_logo_1174949.png?w=256"
+                alt="Imagem da logo do React"
+              />
+              <figcaption>React</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png"
+                alt="Imagem da logo do Styled Components"
+              />
+              <figcaption>Styled Components</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://images.vexels.com/media/users/3/166401/isolated/preview/b82aa7ac3f736dd78570dd3fa3fa9e24-icone-da-linguagem-de-programacao-java.png"
+                alt="Imagem da logo do Java"
+              />
+              <figcaption>Java</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:512/format:webp/1*i9qQBPdQXR-If4xMfWhXPg.png"
+                alt="Imagem da logo do Spring"
+              />
+              <figcaption>Spring</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
