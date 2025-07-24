@@ -40,10 +40,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 header img {
   width: 10%;
   height: auto;
@@ -78,18 +74,31 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
-nav a {
+nav > ul > li > a {
+  text-decoration: none;
+  position: relative;
   color: #fff;
-  padding: 5px 10px;
   transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 main {
@@ -182,7 +191,7 @@ aside > ul > li > a > img:hover {
   transform: scale(1.2);
 }
 
-.contato {
+#contato {
   background-color: #fff;
   padding: var(--padding-padrao);
   border-radius: 8px;
@@ -196,6 +205,29 @@ footer {
   text-align: center;
   padding: var(--padding-padrao);
   margin-top: 20px;
+}
+
+footer p a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+footer a:hover::after {
+  width: 100%;
 }
 
 section::before {
