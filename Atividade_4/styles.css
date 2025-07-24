@@ -101,6 +101,13 @@ main {
   margin: 20px auto;
 }
 
+#sobre-mim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 #sobre-mim,
 #habilidades,
 #sessao-projetos {
@@ -109,6 +116,10 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: var(--padding-padrao);
+}
+
+#habilidades {
+  font-weight: bold;
 }
 
 .projetos {
@@ -121,13 +132,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    background-color: #d1d1d1;
+    background-color: #ffffff;
     padding: 1rem;
     width: 50%;
     border-radius: 8px;
-    border: 1px solid #000;
-    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .projetos > article > a > img {
