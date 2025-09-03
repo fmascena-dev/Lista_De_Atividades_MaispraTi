@@ -7,6 +7,7 @@ Uma aplicação React + TypeScript para buscar filmes, visualizar detalhes e ger
 ## ✨ Funcionalidades
 
 ### 🔍 Página de Busca
+
 - Campo de texto para buscar filmes por título
 - Exibição de filmes populares por padrão
 - Lista de resultados com pôster, título, ano e avaliação
@@ -14,6 +15,7 @@ Uma aplicação React + TypeScript para buscar filmes, visualizar detalhes e ger
 - Sistema de paginação para navegar pelos resultados
 
 ### 📱 Página de Detalhes
+
 - Informações completas do filme (diretor, elenco, sinopse, avaliação)
 - Imagem de fundo (backdrop) e pôster
 - Lista do elenco principal com fotos
@@ -22,6 +24,7 @@ Uma aplicação React + TypeScript para buscar filmes, visualizar detalhes e ger
 - Botão para adicionar/remover dos favoritos
 
 ### ❤️ Lista de Favoritos
+
 - Visualização de todos os filmes favoritos
 - Persistência em localStorage
 - Contador de favoritos no header
@@ -29,6 +32,7 @@ Uma aplicação React + TypeScript para buscar filmes, visualizar detalhes e ger
 - Interface responsiva
 
 ### 🔧 Recursos Técnicos
+
 - **Tratamento de Erros**: Mensagens claras de erro com opção de retry
 - **Loading States**: Indicadores de carregamento durante as requisições
 - **Responsividade**: Design adaptativo para mobile e desktop
@@ -37,10 +41,12 @@ Uma aplicação React + TypeScript para buscar filmes, visualizar detalhes e ger
 ## 🚀 Como executar
 
 ### Pré-requisitos
-- Node.js 18+ 
+
+- Node.js 18+
 - npm ou yarn
 
 ### Instalação
+
 ```bash
 # Clone o repositório
 git clone <url-do-repositorio>
@@ -57,17 +63,21 @@ cp .env.example .env
 ```
 
 ### Executando em desenvolvimento
+
 ```bash
 npm run dev
 ```
-A aplicação estará disponível em `http://localhost:5174`
+
+A aplicação estará disponível em `http://localhost:5173`
 
 ### Build para produção
+
 ```bash
 npm run build
 ```
 
 ### Lint
+
 ```bash
 npm run lint
 ```
@@ -85,7 +95,7 @@ VITE_TMDB_API_KEY=sua_api_key_aqui
 
 ## 🏗️ Estrutura do Projeto
 
-```
+```bash
 src/
 ├── components/          # Componentes reutilizáveis
 │   ├── ErrorMessage.tsx
@@ -131,12 +141,15 @@ src/
 ## 📱 Screenshots
 
 ### Página de Busca
+
 Interface limpa para buscar filmes com resultados em grid responsivo.
 
 ### Página de Detalhes
+
 Informações completas com backdrop, elenco e sinopse.
 
 ### Lista de Favoritos
+
 Gestão fácil dos filmes favoritos com contador no header.
 
 ## 🤝 Contribuição
