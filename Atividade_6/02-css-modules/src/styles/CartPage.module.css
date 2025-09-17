@@ -1,0 +1,157 @@
+.cartPage {
+    width: 100vw;
+  background: var(--background);
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    border: 1px solid red;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.backBtn {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-btn-primary);
+  border: none;
+}
+
+.backBtn:hover {
+  background-color: var(--color-btn-secondary);
+}
+
+.emptyCart {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-top: 2rem;
+}
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.itemImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemTitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.itemPrice {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.itemQuantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.itemQuantityValue {
+  min-width: 2rem;
+  text-align: center;
+}
+
+.itemSubtotal {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  align-self: center;
+}
+
+.total {
+  border-top: 2px solid var(--border);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.totalValue {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (min-width: 268px) {
+  .cartPage {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cartPage {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cartPage {
+    width: 100%;
+  }
+
+  .item {
+    padding: 1.5rem;
+  }
+
+  .itemImage {
+    width: 150px;
+    height: 150px;
+  }
+}
