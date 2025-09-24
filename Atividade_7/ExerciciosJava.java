@@ -5,6 +5,7 @@ import java.util.*;
 // ======================================================
 // Exercício 1 — Encapsulamento (Classe Produto)
 // ======================================================
+
 class Produto implements Identificavel<String> {
     private String nome;
     private BigDecimal preco;
@@ -50,6 +51,7 @@ class Produto implements Identificavel<String> {
 // ======================================================
 // Exercício 2 — Encapsulamento com Validação de Regra (Desconto)
 // ======================================================
+
 class ProdutoComDesconto extends Produto {
     public ProdutoComDesconto(String nome, BigDecimal preco, int quantidade) {
         super(nome, preco, quantidade);
@@ -67,6 +69,7 @@ class ProdutoComDesconto extends Produto {
 // ======================================================
 // Exercício 3 — Herança (Hierarquia de Funcionários)
 // ======================================================
+
 abstract class Funcionario {
     protected String nome;
     protected BigDecimal salario;
@@ -113,6 +116,7 @@ class Desenvolvedor extends Funcionario {
 // ======================================================
 // Exercício 4 — Polimorfismo com Interface (IMeioTransporte)
 // ======================================================
+
 interface IMeioTransporte {
     void acelerar();
     void frear();
@@ -169,6 +173,7 @@ class Trem implements IMeioTransporte {
 // ======================================================
 // Exercício 5 — Abstração (Sistema de Pagamentos)
 // ======================================================
+
 abstract class FormaPagamento {
     public abstract void validarPagamento(String dados) throws Exception;
     public abstract void processarPagamento(BigDecimal valor);
@@ -213,6 +218,7 @@ class Pix extends FormaPagamento {
 // ======================================================
 // Exercício 6 — Imutabilidade e Objetos de Valor (Carrinho)
 // ======================================================
+
 enum Moeda { BRL, USD, EUR }
 
 final class Dinheiro {
@@ -277,6 +283,7 @@ class Carrinho {
 // ======================================================
 // Exercício 7 — Generics (Repositório Genérico)
 // ======================================================
+
 interface Identificavel<ID> {
     ID getId();
 }
@@ -305,6 +312,7 @@ class InMemoryRepository<T extends Identificavel<ID>, ID> implements IRepository
 // ======================================================
 // Exercício 8 — Padrão Strategy (Frete)
 // ======================================================
+
 interface CalculadoraFrete {
     BigDecimal calcular(Pedido pedido);
 }
@@ -363,8 +371,9 @@ class RetiradaNaLoja implements CalculadoraFrete {
 }
 
 // ======================================================
-// MAIN — Demonstração
+// MAIN - Para executar
 // ======================================================
+
 public class ExerciciosJava {
     public static void main(String[] args) {
         System.out.println("=== Demonstração dos Exercícios de Orientação a Objetos ===");
